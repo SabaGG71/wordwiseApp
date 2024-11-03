@@ -1,39 +1,27 @@
 {
   "cities": [
     {
-      "id": "017d",
-      "cityName": "Akhaltsikhe",
+      "id": "4af5",
+      "cityName": "Kutaisi",
       "country": "Georgia",
       "emoji": "🇬🇪",
-      "date": "2024-11-03T19:34:15.238Z",
-      "notes": "",
+      "date": "2024-11-03T22:14:25.395Z",
+      "notes": "hekklk\n",
       "position": {
-        "lat": "41.71432920536912",
-        "lng": "43.145310385239036"
+        "lat": "42.26729688246773",
+        "lng": "42.68975793912368"
       }
     },
     {
-      "id": "ddd4",
-      "cityName": "Ts’q’alt’ubo",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2024-11-03T19:35:02.122Z",
-      "notes": "tskaltubo is fucking best",
+      "id": "2632",
+      "cityName": "Novokubansk",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2024-11-03T22:15:00.861Z",
+      "notes": "ცოკსფდკფნდსკფდს",
       "position": {
-        "lat": "42.21760066669736",
-        "lng": "42.66933968409334"
-      }
-    },
-    {
-      "id": "8ac6",
-      "cityName": "Ts’q’alt’ubo",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2024-11-03T22:01:48.625Z",
-      "notes": "",
-      "position": {
-        "lat": "42.28811895279264",
-        "lng": "42.635531039942"
+        "lat": "45.189665034481344",
+        "lng": "41.32982241133245"
       }
     }
   ]
