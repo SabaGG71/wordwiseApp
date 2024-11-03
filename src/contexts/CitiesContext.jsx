@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-const BASE_URL = `/.netlify/functions/json-server/posts`;
+const BASE_URL = `http://localhost:8000`;
 
 const CitiesContext = createContext();
 
