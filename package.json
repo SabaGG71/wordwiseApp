@@ -10,14 +10,21 @@
     "preview": "vite preview",
     "server": "json-server --watch data/cities.json --port 8000",
     "start": "node server.js",
-    "build": "netlify-lambda build express"
+    "build": "vite build"
+  },
+  "netlify.toml": {
+    "functions": "netlify/functions"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
+    "leaflet": "^1.9.4",
     "netlify-lambda": "^2.0.16",
     "react": "^18.3.1",
+    "react-datepicker": "^7.4.0",
     "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.27.0",
+    "react-scripts": "^5.0.1",
     "serverless-http": "^2.7.0"
   },
   "devDependencies": {

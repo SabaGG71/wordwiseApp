@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <p>&copy; Copyright {new Date().getFullYear()} by WorldWise Inc.</p>
+      <p>&copy; Copyright {new Date().getFullYear()} by Saba Gachechiladze</p>
     </footer>
   );
 }
