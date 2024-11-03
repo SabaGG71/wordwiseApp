@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-const BASE_URL = `http://localhost:8000`;
+const BASE_URL = `https://worldwisereact-65b5e9cdb438.herokuapp.com:8000`;
 
 const CitiesContext = createContext();
 
