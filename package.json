@@ -8,10 +8,11 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "npm run build && json-server --watch data/cities.json --host 0.0.0.0 --port $PORT",
-    "build": "vite build"
+    "build": "vite build",
+    "start": "npm run build && json-server --watch data/cities.json --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
+    "vite": "^5.4.10",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "json-server": "^1.0.0-beta.3",
@@ -35,8 +36,7 @@
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
-    "globals": "^15.9.0",
-    "vite": "^5.4.8"
+    "globals": "^15.9.0"
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "author": "",
