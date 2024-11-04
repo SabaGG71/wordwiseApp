@@ -1,13 +1,17 @@
-require("dotenv").config();
-
 const jsonServer = require("json-server");
-const path = require("path");
 const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "data", "cities.json"));
+const router = jsonServer.router("./data/cities.json");
 const middlewares = jsonServer.defaults({
   static: "./dist",
 });
-const port = process.env.PORT || 5000;
-
+const PORT = process.env.PORT || 8000;
 server.use(middlewares);
-server.use("/api", router);
+server.use(
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+  })
+);
+server.use(router);
+server.listen(PORT, () => {
+  console.log("Server is running");
+});

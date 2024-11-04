@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build": "vite build",
-    "start": "npm run build && serve -s dist -l $PORT"
+    "server": "json-server --watch data/cities.json --port 8000"
   },
   "dependencies": {
     "cors": "^2.8.5",
