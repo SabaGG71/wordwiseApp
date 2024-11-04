@@ -8,12 +8,12 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch data/cities.json --port 8000",
-    "start": "json-server --watch data/cities.json --host 0.0.0.0 --port $PORT",
+    "start": "npm run build && json-server --watch data/cities.json --host 0.0.0.0 --port $PORT",
     "build": "vite build"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "json-server": "^1.0.0-beta.3",
     "leaflet": "^1.9.4",
     "netlify-lambda": "^2.0.16",
