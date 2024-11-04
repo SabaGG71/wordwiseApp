@@ -13,7 +13,7 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       try {
         setIsLoading(true);
-        const res = await fetch(`${BASE_URL}/cities`);
+        const res = await fetch(`${BASE_URL}/api/cities`);
         const data = await res.json();
         setCities(data);
       } catch (err) {
@@ -28,7 +28,7 @@ function CitiesProvider({ children }) {
   async function getCity(id) {
     try {
       setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
+      const res = await fetch(`${BASE_URL}/api/cities/${id}`);
       const data = await res.json();
       setCurrentCity(data);
     } catch (err) {
@@ -41,7 +41,7 @@ function CitiesProvider({ children }) {
   async function createCity(newCity) {
     try {
       setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities`, {
+      const res = await fetch(`${BASE_URL}/api/cities`, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
@@ -60,7 +60,7 @@ function CitiesProvider({ children }) {
   async function deleteCity(id) {
     try {
       setIsLoading(true);
-      await fetch(`${BASE_URL}/cities/${id}`, {
+      await fetch(`${BASE_URL}/api/cities/${id}`, {
         method: "DELETE",
       });
 
